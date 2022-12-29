@@ -1,0 +1,9 @@
+Classes para criação de calendários
+As funções apresentadas não são tudo o que o módulo calendar oferece. Para além delas, podemos utilizar as seguintes classes:
+
+calendar.Calendar - fornece métodos para preparar dados de calendário para formatação;
+calendar.TextCalendar - é utilizada para criar calendários de texto regulares;
+calendar.HTMLCalendar - é utilizada para criar calendários HTML;
+calendar.LocalTextCalendar — é uma subclasse da classe calendar.TextCalendar . O construtor desta classe toma o parâmetro locale, que é utilizado para devolver os nomes apropriados dos meses e dias da semana.
+calendar.LocalHTMLCalendar — é uma subclasse da classe calendar.HTMLCalendar . O construtor desta classe toma o parâmetro locale, que é utilizado para devolver os nomes apropriados dos meses e dias da semana.
+Durante este curso, já teve a oportunidade de criar calendários de texto ao discutir as funções do módulo calendar .
