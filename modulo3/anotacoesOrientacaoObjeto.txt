@@ -1,0 +1,45 @@
+A stack - a abordagem processual
+
+Primeiro, é preciso decidir como armazenar os valores que chegarão à stack. 
+Sugerimos a utilização do mais simples dos métodos, e o emprego de uma lista para este trabalho. 
+Vamos assumir que o tamanho da stack não é limitado de forma alguma.
+Vamos também assumir que o último elemento da lista armazena o elemento superior.
+
+
+
+A atitude do Python em relação à instanciação de objetos levanta uma questão importante - 
+em contraste com outras linguagens de programação, 
+não se pode esperar que todos os objetos da mesma classe tenham o mesmo conjunto de propriedades.
+
+
+class ExampleClass:
+    def __init__(self, val):
+        if val % 2 == 0:
+            self.a = 1
+            print("a")
+        else:
+            self.b = 1
+            print("b")
+
+
+example_object = ExampleClass(5)
+example_object =ExampleClass(4)
+print(example_object.a)
+print(example_object.b)
+
+
+
+1. Uma variável de instância é uma propriedade cuja existência depende da criação de um objeto. Cada objeto pode ter um conjunto diferente de variáveis de instância.
+
+Além disso, eles podem ser livremente adicionados aos, e removidos dos, objetos durante a sua vida útil. Todas as variáveis de instância de objeto são armazenadas dentro de um dicionário dedicado, chamado __dict__, contido em cada objeto separadamente.
+
+
+2. Uma variável de instância pode ser privada quando o seu nome começa por __, mas não se esqueça que tal propriedade ainda é acessível de fora da classe, utilizando um nome mangled construído como _ClassName__PrivatePropertyName.
+
+
+3. Uma variável de classe é uma propriedade que existe exatamente numa cópia, e não precisa de nenhum objeto criado para ser acessível. Tais variáveis não são mostradas como conteúdo __dict__ .
+
+Todas as variáveis de classe de uma classe são armazenadas dentro de um dicionário dedicado, chamado __dict__, contido em cada classe separadamente.
+
+
+4. Uma função chamada hasattr() pode ser utilizada para determinar se um qualquer objeto/classe contém uma propriedade especificada.
