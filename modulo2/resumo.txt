@@ -1,0 +1,48 @@
+Alguns dos métodos oferecidos por strings são:
+
+capitalize() — alterar todas as letras da string para maiúsculas;
+center() — centrar a string dentro do campo de um comprimento conhecido;
+count() — contar as ocorrências de um determinado caratere;
+join() — juntar todos os itens de uma tuple/lista numa string;
+lower() — converter todas as letras da string em letras minúsculas;
+lstrip() — remover os carateres brancos desde o início da string;
+replace() — substituir uma determinada substring por outra;
+rfind() — encontrar uma substring a partir do final da string;
+rstrip() — remover os espaços em branco à direita do final da string;
+split() — dividir a string numa substring usando um determinado delimitador;
+strip() — remover os espaços em branco à esquerda e à direita;
+swapcase() — trocar letras maiúsculas e minúsculas (minúsculas para maiúsculas e vice-versa)
+title() — tornar a primeira letra de cada palavra uma maiúscula;
+upper() — converter todas as letras da string em letras maiúsculas.
+
+ O conteúdo das strings pode ser determinado utilizando os seguintes métodos (todos eles devolvem valores Booleanos):
+
+endswith() — a string termina com uma determinada substring?
+isalnum() — a string consiste apenas em letras e dígitos?
+isalpha() — a string consiste apenas em letras?
+islower() — a string consiste apenas em letras minúsculas?
+isspace() — a string consiste apenas em espaços em branco?
+isupper() — a string consiste apenas em letras maiúsculas?
+startswith() — a string começa com uma determinada substring?
+
+
+os ramos except são pesquisados na mesma ordem em que aparecem no código;
+não deve utilizar mais do que um, exceto um ramo com um certo nome de exceção;
+o número de diferentes ramos except é arbitrário - a única condição é que se utilizar try, deve colocar pelo menos um except (nomeado ou não) depois dele;
+a keyword except não deve ser utilizada sem um precedente try;
+se algum dos ramos except for executado, nenhum outro ramo será visitado;
+se nenhum dos ramos except especificados correspondem à exceção levantada, a exceção permanece sem ser tratada (discutiremos isso em breve)
+se um não nomeado except ramo existir (um sem nome de exceção), tem de ser especificado como o último.
+
+
+
+exceção
+
+a ordem dos ramos é importante!
+não ponha exceções mais gerais antes de exceções mais concretas;
+isto tornará este último inalcançável e inútil;
+Além disso, tornará o seu código confuso e inconsistente;
+O Python não irá gerar quaisquer mensagens de erro relativamente a esta questão.
+
+
+no excecao2.py tem um otimo exemplo de como tratar index 

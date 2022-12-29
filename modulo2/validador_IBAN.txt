@@ -1,0 +1,21 @@
+linha 03: pedir ao utilizador para introduzir o IBAN (o número pode conter espaços, uma vez que melhoram significativamente a legibilidade do número...
+linha 04: ...mas remova-os imediatamente)
+linha 05: o IBAN inserido deve consistir apenas em dígitos e letras - se não consistir...
+linha 06:... fazer output da mensagem;
+linha 07: o IBAN não deve ser menor do que 15 carateres (esta é a variante mais curta, usada na Noruega)
+linha 08: se for mais curto, o utilizador é informado;
+linha 09: além disso, o IBAN não pode ter mais de 31 carateres (esta é a variante mais longa, usada em Malta)
+linha 10: se for mais longo, fazer um aviso;
+linha 11: iniciar o processamento em si;
+linha 12: mover os quatro carateres iniciais para o final do número e converter todas as letras em maiúsculas (passo 02 do algoritmo)
+linha 13: esta é a variável utilizada para completar o número, criada através da substituição das letras por dígitos (de acordo com o passo 03 do algoritmo)
+linha 14: iterar através do IBAN;
+linha 15: se o caratere é um dígito...
+linha 16: basta copiá-lo;
+linha 17: caso contrário...
+linha 18: ...convertê-lo em dois dígitos (observe como tal é feito aqui)
+linha 19: a forma convertida do IBAN está pronta - fazer um inteiro dele;
+linha 20: é o resto da divisão de iban2 por 97 igual a 1?
+linha 21: Se sim, então sucesso;
+linha 22: Caso contrário...
+linha 23: ...o número é inválido.
